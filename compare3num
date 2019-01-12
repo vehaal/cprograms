@@ -1,0 +1,33 @@
+#include<stdio.h>
+int input(int *a, int *b , int *c)
+{
+
+        printf("Enter the 1st number\n");
+        scanf("%d",a);
+        printf("Enter the 2nd number\n");
+          scanf("%d",b);
+        printf("Enter the 3rd number\n");
+          scanf("%d",c);
+}
+int compute(int a,int b, int c)
+{
+        int min;
+        if(a<b)
+                min=a;
+        else
+                min=b;
+        if(min>c)
+                min=c;
+        return min;
+}
+int output(int min)
+{
+        printf("The minimun of three numbers is %d",min);
+}
+void main()
+{
+        int a,b,c,min;
+        input(&a,&b,&c);
+        min=compute(a,b,c);
+        output(min);
+}
