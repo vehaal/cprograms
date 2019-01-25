@@ -1,0 +1,18 @@
+#include<stdio.h>
+struct fraction
+{
+        int num , deno;
+};
+void test(struct fraction *f)
+{
+        int x,y;
+        f->num=x;
+        f->deno=y;
+        printf("num=%d,deno=%d\n",f->num,f->deno);
+}
+int main()
+{
+        struct fraction g = {1,2};
+        test(&g);
+        printf("num=%d, deno=%d\n",g.num,g.deno);
+}
