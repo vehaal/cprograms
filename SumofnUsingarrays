@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+        int i,add[10],sum=0,n, count ;
+        printf("Enter how many numbers you wanna add?\n");
+        scanf("%d",&n);
+        for(i=0;i<n;i++)
+        {
+                for(count=1;count<=i;count++);
+                printf("Enter the %d number :\n", count );
+                scanf("%d", &add[i]);
+                sum = sum+add[i];
+        }
+        printf("The Sum of %d numbers is = %d\n",n ,:wq
+                        sum);
+        return 0;
+}
